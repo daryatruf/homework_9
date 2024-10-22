@@ -2,7 +2,7 @@ from selene import browser, have
 import os
 
 def test_input_data():
-    browser.open('/')   # Перейти на сайт
+    browser.open('/automation-practice-form')   # Перейти на сайт
     browser.element('#firstName').type('DARYA')  # Активировать поле Name, ввести имя
     browser.element('#lastName').type('TRUFANOVA') # Активировать поле Last Name,ввести фамилию
     browser.element('#userEmail').type('ch.irka@yandex.ru')   # Активировать поле Email, ввести адрес эл.почты
@@ -41,4 +41,4 @@ def test_input_data():
     browser.element('//td[preceding-sibling::td[contains(.,"Address")]]').should(have.exact_text('Moscow'))
     browser.element('//td[preceding-sibling::td[contains(.,"State and City")]]').should(have.exact_text('NCR Delhi'))
 
-    # Нажать кнопку Close
+    browser.element('#closeLargeModal').click() # Нажать кнопку Close
