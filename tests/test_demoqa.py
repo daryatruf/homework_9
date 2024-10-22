@@ -41,4 +41,4 @@ def test_input_data():
     browser.element('//td[preceding-sibling::td[contains(.,"Address")]]').should(have.exact_text('Moscow'))
     browser.element('//td[preceding-sibling::td[contains(.,"State and City")]]').should(have.exact_text('NCR Delhi'))
 
-    # Нажать кнопку Close
+    browser.element('#closeLargeModal').click() # Нажать кнопку Close
