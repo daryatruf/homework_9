@@ -1,6 +1,5 @@
-from selene import have, command
+from selene import have
 from selene.support.shared import browser
-from urllib3.util.wait import select_wait_for_socket
 
 from demoqa_tests.resource import path
 

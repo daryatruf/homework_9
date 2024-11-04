@@ -1,4 +1,4 @@
-from demoqa_tests.model.pages import RegistrationPage
+from demoqa_tests.model.pages.registration_page import RegistrationPage
 
 
 def test_registration_user():
